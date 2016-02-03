@@ -1,7 +1,11 @@
 module Flipper
   module Rails
     def flipper
-      @flipper ||= Flipper.new(::Rails.application.config.flipper.adapter)
+      @flipper ||= Flipper.new(
+        ::Rails.application.config.flipper.adapter.new(
+          ::Rails.application.config.flipper.adapter_options
+        )
+      )
     end
   end
 end
