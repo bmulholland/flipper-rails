@@ -21,3 +21,7 @@ or
     adapter_options: Redis::Namespace.new(:flipper_namespace, redis: Redis.new)
   }
 ```
+
+## ActiveRecord
+
+The Flipper gem has a migration built in to create the migration that creates the flipper tables: `rails g flipper:active_record`
