@@ -3,7 +3,7 @@ module Flipper
     def self.flipper
       @flipper ||= Flipper.new(
         ::Rails.application.config.flipper[:adapter].new(
-          ::Rails.application.config.flipper[:adapter_options]
+          ::Rails.application.config.flipper[:adapter_options] || {}
         )
       )
     end
