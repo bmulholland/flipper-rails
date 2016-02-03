@@ -4,6 +4,8 @@ Lightweight wrapper around Flipper to initialize nicely in rails apps
 
 ## Usage
 
+### Configuration
+
 Configure your application (`config/application.rb` or `config/environments/<env>.rb`) with the adapter and options to use:
 
 ```
@@ -21,6 +23,10 @@ or
     adapter_options: Redis::Namespace.new(:flipper_namespace, redis: Redis.new)
   }
 ```
+
+### In-App
+
+Now to access flipper in-app, you can access it with `Flipper::Rails.flipper` e.g.  `Flipper::Rails.flipper[:search].enabled?`
 
 ## ActiveRecord
 
