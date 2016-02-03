@@ -38,8 +38,6 @@ or
   }
 ```
 
-Unfortunately the adapters cannot be included by this gem, so you must do so manually.
-
 ### In-App
 
 Now to access flipper in-app, you can access it with `Flipper::Rails.flipper` e.g.  `Flipper::Rails.flipper[:search].enabled?`
