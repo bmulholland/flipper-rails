@@ -14,4 +14,5 @@ require 'flipper'
 
 require 'flipper/rails/version'
 require 'flipper/rails/options'
+require 'flipper/rails/flipper_accessors'
 require 'flipper/rails/railtie'
