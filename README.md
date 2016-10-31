@@ -40,7 +40,10 @@ or
 
 ### In-App
 
-Now to access flipper in-app, you can access it with `Flipper::Rails.flipper` e.g.  `Flipper::Rails.flipper[:search].enabled?`
+Now to access flipper in-app, you can access it directly with `Flipper::Rails.flipper` e.g.  `Flipper::Rails.flipper[:search].enabled?`
+
+Or, add `include Flipper::Rails::FlipperAccessors` in a class to access the flippers as `#{flipper_name}_flipped?` (eg. `search_feature_flipped?`). These helpers are
+automatically included in controllers.
 
 ## ActiveRecord
 
