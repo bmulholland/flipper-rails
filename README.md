@@ -48,3 +48,17 @@ automatically included in controllers.
 ## ActiveRecord
 
 The Flipper gem has a migration built in to create the migration that creates the flipper tables: `rails g flipper:active_record`
+
+To add a new feature (useful to see it in the UI without manually adding it), you can use the flipper-rails migration helpers.  Eg:
+
+```
+class AddSearchFeatureFlip < ActiveRecord::Migration
+  include Flipper::Rails::Migrations
+
+  def change
+    add_or_remove_feature_flip :search
+  end
+end
+```
+
+You can also use the helpers `add_feature_flip` and `remove_feature_flip` in `def up` and `def down` methods.
