@@ -1,3 +1,9 @@
+# DEPRECATION NOTICE
+
+Either use a rails initializer as described on jnunemaker/flipper, or wait for [the upcoming, official version of flipper-rails.](https://github.com/jnunemaker/flipper/pull/739)
+
+Original documentations below, for posterity.
+
 # flipper-rails
 
 Lightweight wrapper around Flipper to initialize nicely in rails apps
